@@ -1,6 +1,4 @@
-let isOdd;
-
-const checkIsOdd = (x) => isOdd = x % 2 === 0 ? false : true;
+(x) => isOdd = x % 2 === 0 ? false : true;
 
 checkIsOdd(2);
 console.log(isOdd);
