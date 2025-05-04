@@ -1,10 +1,9 @@
-console.log('hello');
-const fistName = 'Vanya';
-const lastName = 'shsh'
-let age = 33
-console.log(fistName + lastName);
-age = 44+32;
-console.log(age);  
-console.log(fistName + ' '+ lastName); 
-let ssa =  123; 
+let isOdd;
 
+const checkIsOdd = (x) => isOdd = x % 2 === 0 ? false : true;
+
+checkIsOdd(2);
+console.log(isOdd);
+
+checkIsOdd(3);
+console.log(isOdd);
