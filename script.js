@@ -5,4 +5,6 @@ let age = 33
 console.log(fistName + lastName);
 age = 44+32;
 console.log(age);  
-alert(fistName + ' '+ lastName); 
+console.log(fistName + ' '+ lastName); 
+let ssa =  123; 
+
