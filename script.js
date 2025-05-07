@@ -1,5 +1,10 @@
-const numbers = [1, 2, 3, 4, 5, 6];
-for (let i = 0; i < numbers.length; i++) {
-    i % 2 === 0 ? numbers[i] = numbers[i] + 3 : null;
+function guessNum(num) {
+    if (tries <= 0){
+        alert('У вас закочились попытки.') 
+        return;
+    } 
+    tries--;
+    secretNum === num ? alert('Поздравялем, вы угадали число ' + num) : alert('К сожалению, вы не угадали, попробуйте еще раз. Выйгрышное число было: '+secretNum+'. осталось попыток: '+tries);
+    
+    
 }
-console.log(numbers);
