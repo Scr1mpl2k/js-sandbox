@@ -1,10 +1,13 @@
-function guessNum(num) {
-    if (tries <= 0){
-        alert('У вас закочились попытки.') 
-        return;
-    } 
-    tries--;
-    secretNum === num ? alert('Поздравялем, вы угадали число ' + num) : alert('К сожалению, вы не угадали, попробуйте еще раз. Выйгрышное число было: '+secretNum+'. осталось попыток: '+tries);
-    
-    
+const person = {
+    name: 'Anna',
+    surname: 'Dance',
+    age: 18,
+};
+person.greeting = function() {
+    console.log('Hello');
 }
+person.changeSurname = 'Vanya';
+person.name = changeSurname;
+console.log(changeSurname)
+console.log(name)
+greeting();
