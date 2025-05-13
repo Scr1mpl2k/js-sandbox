@@ -1,3 +1,4 @@
+
 // 1
 const fruits = ['apple', 'banana', 'melon', 'orange'];
 const hasOrange = search(fruits, 'orange');
