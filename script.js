@@ -1,5 +1,4 @@
-
-// 1
+//
 const fruits = ['apple', 'banana', 'melon', 'orange'];
 const hasOrange = search(fruits, 'orange');
 function search(a, b) { 
@@ -12,3 +11,4 @@ const favoriteCars = cars.slice(0 , 3);
 const otherCars = cars.slice(3);
 console.log(favoriteCars);
 console.log(otherCars);
+console.log('nice');
