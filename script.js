@@ -1,9 +1,11 @@
-function addByX(a) {
-    const rar = () =>{
-        console.log(a + addByX());
-    }
-    return rar;
+const hi = 'hello World'
+const calculateLetters = (a) => {
+
+    const newA = Array.from(a)
+    newA.reduce((acc, user) => {
+        newA;
+        return console.log();
+    }, 0)
+   return newA;   
 }
-const addByTwo = addByX(2);
-const addByFour  = addByX(4)
-addByTwo(5);
+console.log(calculateLetters(hi));
