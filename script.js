@@ -1,11 +1,18 @@
-const hi = 'hello World'
-const calculateLetters = (a) => {
-
-    const newA = Array.from(a)
-    newA.reduce((acc, user) => {
-        newA;
-        return console.log();
-    }, 0)
-   return newA;   
+const hi = 'vanyaaaaaaaaaaaaaaaaaa'
+const calculateLetters = (str) => {
+    let push = {};
+    const newA = Array.from(str)
+    for (let i = 0; i < newA.length; i++) {
+        const item = newA[i];
+        if(push[item]){
+            push[item] += 1;
+        }else{
+        push[item] = 1;
+        };
+    };
+   return push;
 }
+
+
+
 console.log(calculateLetters(hi));
