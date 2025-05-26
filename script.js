@@ -1,4 +1,5 @@
-const hi = 'hello world'
+
+const hi = 'hello'
 const calculateLetters = (str) => {
     let push = {};
     const newA = Array.from(str)
@@ -13,9 +14,21 @@ const calculateLetters = (str) => {
         push[item] = 1;
         };
     };
-   return push;
+    const newPush =  Object.entries(push)
+    const result = {};
+ newPush.forEach(([letter, count]) => {
+  if (result[count]) {
+    result[count].push(letter);
+  } else {
+    result[count] = [letter];
+  }
+});
+return result;
 }
 
-
+  /*pushM = push.reduce((acc, arr) => {
+        return acc + arr[item];
+    }, 0)
+    console.log(pushM);*/
 
 console.log(calculateLetters(hi));
