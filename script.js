@@ -1,34 +1,26 @@
+const registeredUsers = [
+    ['1', '1'],
+    ['manager', 'SuperMe108'],
+    ['editor', '12345'],
+];
 
-const hi = 'hello'
-const calculateLetters = (str) => {
-    let push = {};
-    const newA = Array.from(str)
-    for (let i = 0; i < newA.length; i++) {
-        const item = newA[i];
-        if(item === ' '){
-            continue;
-        }
-        if(push[item]){
-            push[item] += 1;
-        }else{
-        push[item] = 1;
-        };
-    };
-    const newPush =  Object.entries(push)
-    const result = {};
- newPush.forEach(([letter, count]) => {
-  if (result[count]) {
-    result[count].push(letter);
-  } else {
-    result[count] = [letter];
-  }
-});
-return result;
+const btn = document.querySelector('button');
+const inputLog = document.querySelector('input[name="login"]');
+const inputPass = document.querySelector('input[name="password"]');
+const dan = [inputLog, inputPass];
+function Sumbit(event) {
+    event.preventDefault(); 
+    
+    validate();
+};
+function validate() {
+    if(!inputLog.value || !inputPass.value){
+        alert("All fields are required");
+    }
+   ` if (){
+     alert('succes')   
+    }`
+    const get = [inputLog.value, inputPass.value];
+    console.log(get);
 }
-
-  /*pushM = push.reduce((acc, arr) => {
-        return acc + arr[item];
-    }, 0)
-    console.log(pushM);*/
-
-console.log(calculateLetters(hi));
+btn.addEventListener('click', Sumbit);
